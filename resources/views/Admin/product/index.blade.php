@@ -4,6 +4,7 @@
     <!-- content -->
     <div class="container-fluid content-top-gap">
         <!-- //breadcrumbs -->
+        
         <!-- forms -->
         <section class="forms">
             <!-- forms 1 -->
@@ -11,6 +12,11 @@
                 <div class="cards__heading">
                     <h3>List<span></span></h3>
                 </div>
+                @if (session('success'))
+            <p class="alert alert-success">{{ session('success') }}</p>
+        @elseif (session('error'))
+            <p class="alert alert-danger">{{ session('error') }}</p>
+        @endif
             </div>
             <div class="card card_border py-2 mb-4">
                 <div class="cards__heading">

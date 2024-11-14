@@ -95,6 +95,16 @@
    <!--// loading-gif Js -->
   <!-- Bootstrap Core JavaScript -->
   <script src="/assets/js/bootstrap.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // Hide the success message after 2 seconds (2000 milliseconds)
+        setTimeout(function() {
+            $('.alert').fadeOut('slow');
+        }, 3000);
+    });
+</script>
   </body>
   </html>
     

@@ -5,6 +5,11 @@
     <div class="container-fluid content-top-gap">
         <!-- //breadcrumbs -->
         <!-- forms -->
+        @if (session('success'))
+            <p class="alert alert-success">{{ session('success') }}</p>
+        @elseif (session('error'))
+            <p class="alert alert-danger">{{ session('error') }}</p>
+        @endif
         <section class="forms">
             <!-- forms 1 -->
             <div class="card card_border py-2 mb-4">
